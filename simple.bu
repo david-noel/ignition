@@ -17,8 +17,3 @@ storage:
           days = [ "Mon" ]
           start_time = "09:00"
           length_minutes = 60
-    - path: /etc/zincati/config.d/51-rollout-wariness.toml
-      contents:
-        inline: |
-          [identity]
-          rollout_wariness = 0.001
