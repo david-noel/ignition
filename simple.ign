@@ -1,1 +1,1 @@
-{"ignition":{"version":"3.1.0"},"passwd":{"users":[{"name":"core","passwordHash":"$6$rounds=4096$hygX7qD3BK5dBNkL$UcTRzTz3P8AIif.DG83xzABbcTlOeGzITpzSuZ71rG3rJ1j0MJcIBT5xzGGCBQkuvBggQylM.zJdbjVwR9n5a1"}]}}
+{"ignition":{"version":"3.1.0"},"passwd":{"users":[{"name":"core","passwordHash":"$6$rounds=4096$hygX7qD3BK5dBNkL$UcTRzTz3P8AIif.DG83xzABbcTlOeGzITpzSuZ71rG3rJ1j0MJcIBT5xzGGCBQkuvBggQylM.zJdbjVwR9n5a1","sshAuthorizedKeys":["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPYhRqaSIv55HJugxZfazYVnBBoPWxtsocpuLC36TjRb"]}]}}
