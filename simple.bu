@@ -1,8 +1,24 @@
 variant: fcos
-version: 1.1.0
+version: 1.5.0
 passwd:
     users:
     - name: core
-      password_hash: "$6$rounds=4096$hygX7qD3BK5dBNkL$UcTRzTz3P8AIif.DG83xzABbcTlOeGzITpzSuZ71rG3rJ1j0MJcIBT5xzGGCBQkuvBggQylM.zJdbjVwR9n5a1"
+      password_hash: "$6$rounds=4096$li2X8.FOHwy.DrJw$gbl8VQ2r8VTPUIjbq./fkSABB6z4cfiqNnymGlDY3vrttvT7afTNtchacqAERWqzCJOBnfNSYxtX8.e5sSuHD0"
       ssh_authorized_keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPYhRqaSIv55HJugxZfazYVnBBoPWxtsocpuLC36TjRb
+storage:
+    files:
+    - path: /etc/zincati/config.d/55-updates-strategy.toml
+      contents:
+        inline: |
+          [updates]
+          strategy = "periodic"
+          [[updates.periodic.window]]
+          days = [ "Mon" ]
+          start_time = "09:00"
+          length_minutes = 60
+    - path: /etc/zincati/config.d/51-rollout-wariness.toml
+      contents:
+        inline: |
+          [identity]
+          rollout_wariness = 0.001
